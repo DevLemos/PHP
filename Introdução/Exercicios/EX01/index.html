@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.svg">
+    <title>Formulário PHP</title>
+  </head>
+  <body>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="numero1">Primeira nota</label>
+        <input id="nota1" type="text" name="nota1" placeholder="Digite a primeira nota" />
+      </div>
+
+      <div class="form-group">
+        <label for="numero2">Segunda nota</label>
+        <input id="nota2" type="text" name="nota2" placeholder="Digite a segunda nota" />
+      </div>
+
+      <div class="form-group">
+        <label for="numero2">Terceira nota</label>
+        <input id="nota3" type="text" name="nota3" placeholder="Digite a terceira nota" />
+      </div>
+      <input id="btnCalcular" type="submit" name="enviar" value="Calcular média" class="btn" />
+
+      <div id="media" style="margin-top: 5px;"></div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
