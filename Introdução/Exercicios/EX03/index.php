@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>PHP Test</title>
+    <title>PHP Exercicio 3</title>
   </head>
   <body>
     <?php echo '<h2>vaga emprego</h2>'; ?>

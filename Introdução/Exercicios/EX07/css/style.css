@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: #FFF;
+    height: 100%;
+    width: 60%;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 15px 15px -4px rgba(0,0,0,0.1);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    height: 700px;
+    width: 100%;
+    gap: 10px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.control-label{
+    display: block;
+    margin: 10px 0px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+}
+
+.content-field {
+    display: block;
+}
+
+.content-field select{
+    width: 100%;
+    border: 2px solid #333;
+}
+
+.content-field input, select{
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#divContentAndress {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#divContentNumero > .content-field >#txtNumero{
+    width: 100px;
+}
+
+#divPersonalName{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.andress-title, .personal-title, .thankyou-title {
+    display: flex;
+    position: relative;
+    text-transform: uppercase;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.andress-title h2, .personal-title h1, .thankyou-title h1{
+    color:  #c6c6c6;
+}
+
+#personal-information{
+    grid-column: 1;
+}
+
+#andress{
+    grid-column: 1;
+}
+
+.line{
+    padding: 2px;
+    height: 2px;
+    width: 100%;
+    background-color: #c6c6c6;
+    margin: 15px 0px;
+}
+
+#container-img{
+    grid-column: 2;
+    grid-row: span 2;
+    padding: 50px;
+}
+
+#container-img img{
+    min-width: 200px;
+    height: 43vh;
+}
+
+.date-input{
+    width: 300px;
+    padding: 8px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    background-color: #FFF;
+    transition: border-color 0.3s;
+}
+
+.date-input:focus{
+    border-color: #bbb5b5;
+}
+
+#btnForm {
+    grid-column: 2;
+}
+
+.button-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#btnEnviar, #btnLimpar, #btnArquivoGravado{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+#btnEnviar{
+    background-color: #4bb635;
+}
+
+#btnLimpar{
+    background-color: #a8c1ee;
+}
+
+#btnArquivoGravado{
+    background-color: #ddc330;
+}
+
+/*Scroll Estilos*/
+.scroll {
+    overflow-y: auto;
+}
+
+.scroll::-webkit-scrollbar{
+    width: 8px;
+}
+
+.scroll::-webkit-scrollbar-track{
+    background: rgba(200,200,200,0.3);
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background: rgba(100,100,100,0.5);
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover{
+    background: rgba(100,100,100,0.8);
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 1300px){
+    #container-img{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #btnForm{
+        grid-column: 1;
+    }
+    .button-container{
+        justify-content: start;
+    }
+}
+
+@media (max-width: 1000px){
+    #divPersonalName{
+        grid-template-columns: 1fr;
+    }
+}
